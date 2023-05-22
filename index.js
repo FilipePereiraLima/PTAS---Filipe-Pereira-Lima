@@ -18,8 +18,7 @@ app.get('/pessoas', async function(req, res){
 })
 
 app.get('/pessoas/criar', async function(req, res){
-  var pessoas = await pessoa.findAll();
-  res.render('pessoas/criar', { pessoas});
+  res.render('pessoas/criar');
 })
 
 app.post('/pessoas/criar', async function(req, res){
@@ -33,7 +32,7 @@ app.post('/pessoas/criar', async function(req, res){
   }
 })
 
-app.get('/pessoas/delete', async function(req, res){
+app.get('/pessoas/deletar', async function(req, res){
   try {
       await pessoa.destroy({ where: { id: req.query.id } });
       res.redirect('/pessoas')

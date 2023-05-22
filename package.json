@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-},
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -19,5 +19,13 @@
     "nodemon": "^2.0.21",
     "sequelize-cli": "^6.6.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FilipePereiraLima/PTAS---Filipe-Pereira-Lima.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FilipePereiraLima/PTAS---Filipe-Pereira-Lima/issues"
+  },
+  "homepage": "https://github.com/FilipePereiraLima/PTAS---Filipe-Pereira-Lima#readme",
   "description": ""
 }
