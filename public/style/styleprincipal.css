@@ -1,3 +1,53 @@
+body{
+  background-color:rgb(95, 105, 212) ;
+    
+}
 li{
+    background-color: white;
     list-style: none;
+
+}
+#card{
+    border-radius: 5px;
+    box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.22);
+    padding: 35px;
+    margin: 20px;
+    width: 230px;
+    transition: all 0.3s ease-out;
+}
+
+#card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  #card p {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+.row {
+
+    padding-left: 1.0em;
+    padding-right: 1.0em;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+padding-top: 10px;
+    
+  }
+#linhazinha{
+    border-left: 3px solid #4895ff;
+
+}
+#butao{
+    background-color: rgb(72, 149, 255);
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 28px;
 }

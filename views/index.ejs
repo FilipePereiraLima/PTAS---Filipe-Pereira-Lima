@@ -9,18 +9,26 @@
 
 </head>
 <body>
+
+<section>
     <% pessoas.forEach((pessoa) => { %>
-        <li id="card">
-      <span>  <%= pessoa.nome %></span>
-      <span><%= pessoa.sobrenome %></span>
-        <span><%= pessoa.idade %></span>
-            <span><%= pessoa.altura %></span>
+        <div class="row">
+            <li id="card">
+                <div id="linhazinha">
+                    <span><p> Nome: <%= pessoa.nome %></p> </span>
+                    <span><p> Sobrenome: <%= pessoa.sobrenome %></p></span>
+                    <span><p>Idade: <%= pessoa.idade %></p></span>
+                    <span><p>Altura: <%= pessoa.altura %></p></span>
 
-            <button><a href="/pessoas/deletar?id=<%=pessoa.id%>">Deletar</a></button>
-    </li>
+                    <button id="butao"><a href="/pessoas/deletar?id=<%=pessoa.id%>">Deletar</a></button>
+                </div>
+            </li>
+        </div>
     <% }) %>
-
+</section>
 
     <button><a href="/pessoas/criar">Cadastro</a></button>
+
+
 </body>
 </html>
